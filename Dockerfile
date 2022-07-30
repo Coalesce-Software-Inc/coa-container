@@ -2,6 +2,8 @@
 
 FROM alpine:3.16.0 as base
 
+ARG CACHEBUST=1
+
 RUN apk add --update npm git
 RUN npm install -g @coalescesoftware/coa
 
